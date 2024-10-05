@@ -16,7 +16,7 @@ void profilMedin();
 void biroHima();
 void profilKsr();
 void profilKwu();
-void exit();
+void exitMenu();
 
 void menu() {
     cout << endl << " ** PROFIL HIMAKOM UNILA ** " << endl;
@@ -356,10 +356,7 @@ void profilInter() {
                 cout << "Pilihan tidak valid! Silakan coba lagi." << endl;
         }
     } while (pilihanInter != 3);
-    
-
 }
-
 
 void profilKeilmuan(){
     int pilihanKeilmuan;
@@ -372,7 +369,6 @@ do {
     cout << "3. Kembali Ke Menu Bidang Hima" << endl;
     cout << "Masukan Pilihan Anda: ";
     cin >> pilihanKeilmuan;
-    
     
     switch (pilihanKeilmuan){
         case 1 :
@@ -392,15 +388,10 @@ do {
              cout << "Kembali ke Menu Bidang Hima." << endl;
             break;
         default :
-             cout << "Pilihan tidak valid! Silahkan Coba Lagi." << endl;
-             
+             cout << "Pilihan tidak valid! Silahkan Coba Lagi." << endl;   
     }
-     
-    
 } while (pilihanKeilmuan != 3);
-
 }
-
 
 void biroHima() {
     int pilihanBiro;
@@ -427,10 +418,7 @@ void biroHima() {
                 cout << "Pilihan tidak valid! Silakan coba lagi." << endl;
         }
     } while (pilihanBiro ! = 3);
-    
-    
 }
-
 
 void profilKwu(){
     int pilihanKwu;
@@ -461,22 +449,12 @@ void profilKwu(){
              cout << "Kembali ke Menu Utama." << endl;
             break;
         default :
-            cout << "Pilihan Tidak Valid Silakan Coba Lagi." << endl;
-            
+            cout << "Pilihan Tidak Valid Silakan Coba Lagi." << endl;  
     }
-    
 } while (pilihanKwu ! = 3);
-
 }
 
-
-
-
-
-
 int main(){
-
-
-
+menu();
 return 0;
 }
