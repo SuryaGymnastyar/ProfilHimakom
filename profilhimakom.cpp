@@ -15,7 +15,7 @@ void profilKeilmuan();
 void profilMedin();
 void biroHima();
 void profilKsr();
-void profilKwu():
+void profilKwu();
 void exit();
 
 void menu() {
@@ -397,7 +397,7 @@ do {
     }
      
     
-} while (pilihanKeilmuan ! = 3);
+} while (pilihanKeilmuan != 3);
 
 }
 
