@@ -453,7 +453,7 @@ void biroHima() {
     do {
         cout << endl << " ***** BIRO HIMAKOM ***** " << endl;
         cout << "1. Biro Kesekretariatan" << endl;
-        cout << "2. Bidang Kewirausahaan" << endl;
+        cout << "2. Biro Kewirausahaan" << endl;
         cout << "3. Kembali ke Menu Stuktur" << endl;
         cout << "Masukkan pilihan Anda: ";
         cin >> pilihanBiro;
