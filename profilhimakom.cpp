@@ -97,7 +97,8 @@ void profilKeilmuan(){
     cout << "2. Sekertaris Bidang : Dela sylviayani." << endl;
     cout << "3. Bendahara bidang : Theresia Tri Oktavia." << endl << endl;
     cout << "*** Apa Itu Keilmuan? ***"<< endl;
-    cout << "Bidang Keilmuan merupakan bidang yang bekerja sama dengan jurusan ilmu komputer untuk memfasilitası pengembangan\nminat, bakat, serta potensi akademik maupun non-akademik mahasiswa jurusan ilmu komputer" << endl << endl;
+    cout << "Bidang Keilmuan merupakan bidang yang bekerja sama dengan jurusan ilmu komputer untuk memfasilitası pengembangan minat, bakat, serta potensi akademik" << endl;
+    cout << "maupun non-akademik mahasiswa jurusan ilmu komputer" << endl;
 }
 
 void profilKwu(){
@@ -107,7 +108,7 @@ void profilKwu(){
     cout << "2. Sekertaris Biro : Safira. " << endl ;
     cout << "3. Bendahara Biro : Nazwa. " << endl << endl;
     cout << "*** Apa itu Biro Kewirausahaan? ***" << endl;
-    cout << "Biro Kewirausahaan adalah unit atau departemen di HIMAKOM yang fokus pada pengembangan\ndan dukungan bagi aktivitas kewirausahaan bagi mahasiswa ilmu komputer." << endl << endl;
+    cout << "Biro Kewirausahaan adalah unit atau departemen di HIMAKOM yang fokus pada pengembangan dan dukungan bagi aktivitas kewirausahaan bagi mahasiswa ilmu komputer." << endl;
 }
 
 
