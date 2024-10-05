@@ -11,7 +11,12 @@ void bidangHima();
 void profilKader();
 void profilEkster();
 void profilInter();
+void profilKeilmuan();
+void profilMedin();
 void biroHima();
+void profilKsr();
+void profilKwu():
+void exit();
 
 void menu() {
     cout << endl << " ** PROFIL HIMAKOM UNILA ** " << endl;
