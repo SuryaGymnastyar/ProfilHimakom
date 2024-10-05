@@ -60,6 +60,31 @@ void profilPresidium (){
     cout << "Presidium memiliki tugas yaitu pengkoordinasian kegiatan organisasi, memiliki wewenang dalam pembuatan keputusan bersama" << endl;
     cout << "serta mewakili himpunan dalam berbagai forum. Presidium juga memiliki peran strategis menjaga stabilitas dan keberlanjutan organisasi." << endl;
     cout << "Presidium juga mempunyai fungsi yaitu mengembangkan program kerja, memfasilitası komunikasi antar anggota, dan memimpin rapat organisasi." << endl;
+}
+
+void profilKeilmuan(){
+    cout << "**** Profil Keilmuan ****" << endl << endl;
+    cout << "*** Pimpinan Bidang Keilmuan. ***" << endl;
+    cout << "1. Ketua Bidang : Rakhmat Herlambang." << endl;
+    cout << "2. Sekertaris Bidang : Dela sylviayani." << endl;
+    cout << "3. Bendahara bidang : Theresia Tri Oktavia." << endl << endl;
+    cout << "*** Apa Itu Keilmuan? ***"<< endl;
+    cout << "Bidang Keilmuan merupakan bidang yang bekerja sama dengan jurusan ilmu komputer untuk memfasilitası pengembangan\nminat, bakat, serta potensi akademik maupun non-akademik mahasiswa jurusan ilmu komputer" << endl << endl;
+   
+}
+
+
+void profilKwu(){
+    cout << "*** Profil Kwu ***" << endl<<endl;
+    cout << "*** Pimpinan ***" << endl;
+    cout << "1. Ketua Biro : Ayu. " << endl;
+    cout << "2. Sekertaris Biro : Safira. " << endl ;
+    cout << "3. Bendahara Biro : Nazwa. " << endl << endl;
+    cout << "*** Apa itu Biro Kewirausahaan? ***" << endl;
+    cout << "Biro Kewirausahaan adalah unit atau departemen di HIMAKOM yang fokus pada pengembangan\ndan dukungan bagi aktivitas kewirausahaan bagi mahasiswa ilmu komputer." << endl << endl;
+}
+
+
 
 int main(){
 
