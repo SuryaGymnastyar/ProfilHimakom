@@ -165,7 +165,8 @@ void bidangHima() {
         cout << "2. Bidang Eksternal" << endl;
         cout << "3. Bidang Internal" << endl;
         cout << "4. Bidang Medinfo" << endl;
-        cout << "5. Kembali ke Menu Stuktur" << endl;
+        cout << "5. Bidang Keilmuan" << endl;
+        cout << "6. Kembali ke Menu Stuktur" << endl;
         cout << "Masukkan pilihan Anda: ";
         cin >> pilihanBidang;
 
@@ -182,13 +183,16 @@ void bidangHima() {
             case 4:
                 profilMedin(); 
                 break;
-            case 5:
+            case 5 : 
+                 profilKeilmuan();
+                 break;
+            case 6 :
                 cout << "Kembali ke Menu Utama." << endl;
                 break;
             default:
                 cout << "Pilihan tidak valid! Silakan coba lagi." << endl;
         }
-    } while (pilihanBidang != 5);
+    } while (pilihanBidang != 6);
 }
 
 
@@ -421,6 +425,50 @@ void biroHima() {
         }
     } while (pilihanBiro ! = 3);
 }
+
+
+
+void profilKesekretariatan(){
+    int pilihanKsr;
+    
+ do{
+     
+     cout << "*** Profil Kesekretariatan ***" << endl << endl;
+     cout << "Biro Kesekretariatan adalah biro yang bertanggung jawab terhadap kegiatan\nadministrasi, pengelolaan inventaris, pengadaan,dan pemeliharaan sarana-prasarana\ndengan optimal untuk kelancaraan progja HIMAKOM." << endl << endl;
+     cout << "1. Kepengurusan."<< endl;
+     cout << "2. Program Kerja." << endl;
+     cout << "3. Kembali Ke Menu Biro Hima." << endl;
+     cout << "Masukkan Pilihan Anda : " << endl;
+     cin >> pilihanKsr;
+     
+     switch (pilihanKsr){
+         case 1 :
+              cout << "*** Kepengurusan ***" << endl << endl;
+              cout << "1. Kepala Biro : " << endl;
+              cout << "2. Sekertaris Biro : " << endl;
+              cout << "3. Bendahara Biro : " << endl;
+            break;
+        case 2 :
+              cout << "*** Program Kerja ***" << endl << endl;
+              cout << "1. Pelatihan SPJ & LPJ" << endl;
+              cout << "2. Mading Himakom" << endl;
+              cout << "3. inventaris Himakom" << endl;
+              cout << "4. Arsip Himakom" << endl
+              cout << "5. Administrasi Sekret Himakom" << endl;
+            break;
+        case 3 :
+              cout << "Kembali Ke Menu Biro Hima." << endl;
+            break;
+        default :
+            cout << "Pilihan tidak valid Silakan coba lagi." << endl;
+        
+     }     
+ } while (pilihanKsr ! = 3);
+     
+     
+}
+
+
 
 void profilKwu(){
     int pilihanKwu;
