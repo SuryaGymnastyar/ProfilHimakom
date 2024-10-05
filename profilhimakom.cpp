@@ -362,8 +362,56 @@ void profilInter() {
                 cout << "Pilihan tidak valid! Silakan coba lagi." << endl;
         }
     } while (pilihanInter != 3);
+
 }
- 
+
+
+
+void profilMedinfo(){
+    int pilihanMedin;
+    
+ do{
+     
+     cout << "*** Profil Medinfo ***" << endl << endl;
+     cout << "Bidang Media Informasi adalah salah satu bidang di HIMAKOM yang mengurus tentang ke mediaan." << endl << endl;
+     cout << "1. Pimpinan."<< endl;
+     cout << "2. Program Kerja." << endl;
+     cout << "3. Kembali Ke Menu Bidang Hima." << endl;
+     cout << "Masukkan Pilihan Anda : " << endl;
+     cin >> pilihanMedin;
+     
+     switch (pilihanMedin){
+         case 1 :
+              cout << "*** Pimpinan ***" << endl << endl;
+              cout << "1. Ketua Bidang : Mukti Prabowo. " << endl;
+              cout << "2. Sekertaris Bidang : Enggal Bima sakti. " << endl;
+              cout << "3. Bendahara Bidang : Rica Lizania." << endl;
+            break;
+        case 2 :
+              cout << "*** Program Kerja ***" << endl << endl;
+              cout << "1. Matriks" << endl;
+              cout << "   a. publikasi informasi" << endl;
+              cout << "   b. Youtube" << endl;
+              cout << "   c. Dokumentasi Acara" << endl;
+              cout << "   d. Pengembangan Website" << endl << endl;
+              cout << "2. Non Matriks" << endl;
+              cout << "   a. Pelatihan Desain" << endl;
+              cout << "   b. Pelatihan Editing Video" << endl;
+            break;
+        case 3 :
+              cout << "Kembali Ke Menu Bidang Hima." << endl;
+            break;
+        default :
+            cout << "Pilihan tidak valid Silakan coba lagi." << endl;
+        
+       }     
+    } while (pilihanMedin ! = 3);
+     
+     
+}
+
+
+
 void profilKeilmuan(){
     int pilihanKeilmuan;
     
@@ -418,7 +466,7 @@ void biroHima() {
                 profilKwu();
                 break;
             case 3:
-                cout << "Kembali ke Menu Utama." << endl;
+                cout << "Kembali ke Menu Struktur." << endl;
                 break;
             default:
                 cout << "Pilihan tidak valid! Silakan coba lagi." << endl;
@@ -496,7 +544,7 @@ void profilKwu(){
              cout << "4. Pelatihan kewirausahaan." << endl;
             break;
         case 3 :
-             cout << "Kembali ke Menu Utama." << endl;
+             cout << "Kembali ke Menu Biro Hima." << endl;
             break;
         default :
             cout << "Pilihan Tidak Valid Silakan Coba Lagi." << endl;  
