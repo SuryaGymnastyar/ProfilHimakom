@@ -181,7 +181,7 @@ void bidangHima() {
                 profilInter();
                 break;
             case 4:
-                profilMedin(); 
+                profilMedinfo(); 
                 break;
             case 5 : 
                  profilKeilmuan();
