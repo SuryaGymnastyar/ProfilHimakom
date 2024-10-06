@@ -12,51 +12,72 @@ void profilKader();
 void profilEkster();
 void profilInter();
 void profilKeilmuan();
-void profilMedin();
+void profilMedinfo();
 void biroHima();
-void profilKsr();
+void profilKesekretariatan();
 void profilKwu();
 void exitMenu();
 
 void menu() {
-    cout << endl << " ** PROFIL HIMAKOM UNILA ** " << endl;
-    cout << "1. Sejarah Singkat Himakom" << endl;
-    cout << "2. Visi Misi Himakom" << endl;
-    cout << "3. Struktur Organisasi Himakom" << endl;
-    cout << "4. Exit" << endl; 
+    int pilihanMenu;
+    do {
+        cout << endl << " * PROFIL HIMAKOM UNILA * " << endl << endl;
+        cout << "1. Sejarah Singkat Himakom" << endl;
+        cout << "2. Visi Misi Himakom" << endl;
+        cout << "3. Struktur Organisasi Himakom" << endl;
+        cout << "4. Exit" << endl << endl;
+        cout << "Masukkan pilihan Anda: ";
+        cin >> pilihanMenu;
+
+        switch (pilihanMenu) {
+            case 1:
+                sejarahHima();
+                break;
+            case 2:
+                visiMisiHima();
+                break;
+            case 3:
+                strukturHima();
+                break;
+            case 4:
+                exitMenu();
+                break;
+            default:
+                cout << "Pilihan tidak valid! Silakan coba lagi." << endl;
+        }
+    } while (pilihanMenu != 4);
 }
 
 void sejarahHima() {
-    cout << endl << " ** Sejarah Singkat Himakom ** " << endl;
+    cout << endl << " ** Sejarah Singkat Himakom ** " << endl << endl;
     cout << "Himakom terbentuk pada tahun 2012. Awalnya di Ilmu Komputer sendiri memiliki nama KOMIK (Komunitas Ilmu Komputer)" << endl;
     cout << "dan saat itu masih di bawah naungan Himatika (Himpunan Mahasiswa Matematika). Awalnya di himakom terdapat" << endl;
     cout << "4 bidang dan 2 biro. Sekarang kepengurusan himakom menjadi presidium, 1 badan khusus, 5 bidang, dan 2 biro." << endl;
 }
 
 void visiMisiHima() {
-    cout << endl << " ** Visi Misi Himakom ** " << endl;
-    cout << "** Visi Himakom **" << endl;
+    cout << endl << " ** Visi Misi Himakom ** " << endl << endl;
+    cout << "** Visi Himakom **" << endl << endl;
     cout << "Menciptakan sebuah himpunan yang inklusif, inovatif, dan kompetitif" << endl;
     cout << "dengan memperjuangkan perubahan positif dalam kepemimpinan, serta memberikan kesempatan" << endl;
-    cout << "bagi anggota untuk berkembang secara holistik dan membangun identitas yang kuat." << endl;
-    cout << "** Misi Himakom **" << endl;
+    cout << "bagi anggota untuk berkembang secara holistik dan membangun identitas yang kuat." << endl << endl;
+    cout << "** Misi Himakom **" << endl << endl;
     cout << "1. Mendorong inovasi dalam kepemimpinan untuk menciptakan perubahan yang signifikan" << endl;
     cout << "dan memberikan manfaat maksimal bagi anggota himpunan." << endl;
     cout << "2. Menjunjung tinggi nilai-nilai transparansi dan akuntabilitas dalam setiap keputusan dan tindakan." << endl;
     cout << "3. Menjadi himpunan yang aktif dan positif dalam memecahkan masalah dan mendukung kegiatan akademik" << endl;
-    cout << "dan non-akademik di lingkungan jurusan maupun di luar jurusan." << endl;
+    cout << "dan non-akademik di lingkungan jurusan maupun di luar jurusan." << endl << endl;
 }
 
 void strukturHima() {
     int pilihanStruktur;
-
     do {
-        cout << endl << " ** STRUKTUR ORGANISASI HIMAKOM ** " << endl;
+        cout << endl << " ** STRUKTUR ORGANISASI HIMAKOM ** " << endl << endl;
         cout << "1. Presidium" << endl;
         cout << "2. Badan Khusus" << endl;
         cout << "3. Bidang HIMAKOM" << endl;
         cout << "4. Biro Hima" << endl;
-        cout << "5. Kembali ke Menu Utama" << endl;
+        cout << "5. Kembali ke Menu Utama" << endl << endl;
         cout << "Masukkan pilihan Anda: ";
         cin >> pilihanStruktur;
 
@@ -83,7 +104,7 @@ void strukturHima() {
 }
 
 void profilPresidium() {
-    cout << "*** PROFIL PRESIDIUM HIMAKOM ***" << endl;
+    cout << endl <<"*** PROFIL PRESIDIUM HIMAKOM ***" << endl;
     cout << endl << " Ketua Umum Himakom : Robby Hidayat " << endl;
     cout << " Wakil Ketua Umum Himakom : M. Raihan Al Hayya " << endl;
     cout << " Sekertaris Umum Himakom : Kezia Natalia Wongkar " << endl;
@@ -97,9 +118,8 @@ void profilPresidium() {
 
 void profilBansus() {
     int pilihanBansus;
-
     do {
-        cout << "*** PROFIL BADAN KHUSUS (BANSUS) ***" << endl;
+        cout << endl << "*** PROFIL BADAN KHUSUS (BANSUS) ***" << endl << endl;
     cout << "Bansus, Badan Khusus yang berperan sebagai garda terdepan dalam:" << endl;
     cout << "- Menaungi asisten dosen," << endl;
     cout << "- Mengelola kebutuhan laboratorium," << endl;
@@ -110,19 +130,19 @@ void profilBansus() {
     cout << "dan komunikatif untuk mencetak mahasiswa ilmu komputer yang berpengaruh." << endl;
     cout << endl;
     cout << "Dengan motto \"Empowering Learning, Cultivating Excellence\"," << endl;
-    cout << "BANSUS menjadi motor penggerak dalam menjaga dan mengoptimalkan laboratorium komputer." << endl;
+    cout << "BANSUS menjadi motor penggerak dalam menjaga dan mengoptimalkan laboratorium komputer." << endl << endl;
         cout << "1. Kepengurusan dan Anggota" << endl;
         cout << "2. Program Kerja" << endl;
-        cout << "3. Kembali ke Menu Struktur" << endl;
+        cout << "3. Kembali ke Menu Struktur" << endl << endl;
         cout << "Masukkan pilihan Anda: ";
         cin >> pilihanBansus;
 
         switch (pilihanBansus) {
             case 1:
-                cout << "*** KEPENGURUSAN BANSUS ***" << endl;
+                cout << endl <<"*** KEPENGURUSAN BANSUS ***" << endl << endl;
                 cout << "Kepala Badan         : Ridho Fernando" << endl;
                 cout << "Sekretaris Badan     : Anisa Citra Pratiwi" << endl;
-                cout << "Bendahara Badan      : Rhalasya Eleina Putri" << endl;
+                cout << "Bendahara Badan      : Rhalasya Eleina Putri" << endl << endl;
                 cout << "Anggota Badan Khusus :" << endl;
                 cout << "1. Akmal Adnan Djayasinga" << endl;
                 cout << "2. Luthfi Aditya" << endl;
@@ -141,7 +161,7 @@ void profilBansus() {
                 cout << endl;
                 break;
             case 2:
-                cout << "\n=== Program Kerja ===\n";
+                cout << "\n=== Program Kerja ===\n" << endl;
                 cout << "1. FOSI ASISTEN DOSEN\n";
                 cout << "2. PEER GROUP\n";
                 cout << "3. PELATIHAN ASISTEN DOSEN\n";
@@ -158,15 +178,14 @@ void profilBansus() {
 
 void bidangHima() {
     int pilihanBidang;
-
     do {
-        cout << endl << " ***** BIDANG HIMAKOM ***** " << endl;
+        cout << endl << " ***** BIDANG HIMAKOM ***** " << endl << endl;
         cout << "1. Bidang Kaderisasi" << endl;
         cout << "2. Bidang Eksternal" << endl;
         cout << "3. Bidang Internal" << endl;
         cout << "4. Bidang Medinfo" << endl;
         cout << "5. Bidang Keilmuan" << endl;
-        cout << "6. Kembali ke Menu Stuktur" << endl;
+        cout << "6. Kembali ke Menu Stuktur" << endl << endl;
         cout << "Masukkan pilihan Anda: ";
         cin >> pilihanBidang;
 
@@ -195,29 +214,27 @@ void bidangHima() {
     } while (pilihanBidang != 6);
 }
 
-
 void profilKader() {
     int pilihanKader;
-
     do {
-        cout << endl << " ===== PROFIL BIDANG KADERISASI ===== " << endl;
+        cout << endl << " ===== PROFIL BIDANG KADERISASI ===== " << endl << endl;
         cout << "Bidang ini merupakan bidang yang bergerak untuk mempersiapkan generasi penerus HIMAKOM." << endl;
         cout << "Fokus bidang kaderisasi adalah mengarahkan dan membimbing potensi-potensi individu mahasiswa baru agar berkembang secara optimal." << endl;
         cout << "Kaderisasi bukan sekadar proses pelatihan, tetapi juga perjalanan yang membentuk karakter" << endl;
         cout << "dan mempersiapkan individu untuk menghadapi tantangan sebagai pemimpin yang berpengaruh" << endl;
-        cout << "dalam lingkungan himpunan dan jurusan." << endl;
+        cout << "dalam lingkungan himpunan dan jurusan." << endl << endl;
         cout << "1. Kepengurusan dan Anggota" << endl;
         cout << "2. Program Kerja" << endl;
-        cout << "3. Kembali ke Menu Bidang Hima" << endl;
+        cout << "3. Kembali ke Menu Bidang Hima" << endl << endl;
         cout << "Masukkan pilihan Anda: ";
         cin >> pilihanKader;
 
         switch (pilihanKader) {
             case 1:
-                cout << "\n=== Kepengurusan dan Anggota ===\n";
+                cout << "\n=== Kepengurusan dan Anggota ===\n" << endl;
                 cout << "Kepala Bidang         : Muhammad Nadhif Nanditama" << endl;
                 cout << "Sekretaris Bidang     : Putri Wulandari" << endl;
-                cout << "Bendahara Bidang      : Fitria Az Zahra" << endl;
+                cout << "Bendahara Bidang      : Fitria Az Zahra" << endl << endl;
                 cout << "Anggota Bidang Kaderisasi :" << endl;
                 cout << "1. Rizki Mahesa" << endl;
                 cout << "2. Muhammad Ferdiansyah" << endl;
@@ -236,7 +253,7 @@ void profilKader() {
                 cout << endl;
                 break;
             case 2:
-                cout << "\n=== Program Kerja ===\n";
+                cout << "\n=== Program Kerja ===\n" << endl;
                 cout << "1. LKMMIK-TD\n";
                 cout << "2. LKMMIK-PD\n";
                 cout << "3. PRINTER\n";
@@ -253,27 +270,26 @@ void profilKader() {
 
 void profilEkster() {
     int pilihanEkster;
-
     do {
-        cout << endl << " ===== PROFIL BIDANG EKSTERNAL ===== " << endl;
+        cout << endl << " ===== PROFIL BIDANG EKSTERNAL ===== " << endl << endl;
           cout << "Bidang Eksternal adalah bidang yang bertanggung jawab atas hubungan dengan komunitas atau himpunan lainnya di luar Himakom." << endl;
         cout << "Di bidang ini, kita lebih banyak membangun relasi atau hubungan kerja sama dengan pihak luar yang tentunya menguntungkan." << endl;
         cout << "Keuntungannya adalah kita dapat mengasah soft skill, antara lain:" << endl;
         cout << "- Public Speaking" << endl;
         cout << "- Berinteraksi dengan orang" << endl;
-        cout << "- Menambah pengetahuan" << endl;
+        cout << "- Menambah pengetahuan" << endl << endl;
         cout << "1. Kepengurusan dan Anggota" << endl;
         cout << "2. Program Kerja" << endl;
-        cout << "3. Kembali ke Menu Bidang Hima" << endl;
+        cout << "3. Kembali ke Menu Bidang Hima" << endl << endl;
         cout << "Masukkan pilihan Anda: ";
         cin >> pilihanEkster;
 
         switch (pilihanEkster) {
             case 1:
-                cout << "\n=== Kepengurusan dan Anggota ===\n";
+                cout << "\n=== Kepengurusan dan Anggota ===\n" << endl;
                 cout << "Kepala Bidang : David Mel Gibson Sianturi" << endl;
                 cout << "Sekretaris Bidang : Gustika Dwi Mardini" << endl;
-                cout << "Bendahara Bidang : Devina Citra Felisha" << endl;
+                cout << "Bendahara Bidang : Devina Citra Felisha" << endl << endl;
                 cout << "Anggota Bidang Eksternal :" << endl;
                 cout << "1. Philip Ebenhaezer Karundeng" << endl;
                 cout << "2. Muhammad Fakhri Wilova" << endl;
@@ -295,7 +311,7 @@ void profilEkster() {
                 cout << endl;
                 break;
             case 2:
-                cout << "\n=== Program Kerja ===\n";
+                cout << "\n=== Program Kerja ===\n" << endl;
                 cout << "1. INSTITUTION CAMPUS EXPEDITION\n";
                 cout << "2. COLLABORATION SOCIAL WORKS\n";
                 cout << "3. COMPUTER SCIENCE SHOWDOWN\n";
@@ -311,23 +327,23 @@ void profilEkster() {
 
 void profilInter() {
     int pilihanInter;
-
     do {
-        cout << endl << " ===== PROFIL BIDANG INTERNAL ===== " << endl;
+        cout << endl << " ===== PROFIL BIDANG INTERNAL ===== " << endl << endl;
         cout << "Bidang Internal adalah bidang yang bertugas untuk membina hubungan di dalam lingkungan ilmu komputer." << endl;
       cout << "Program kerja bidang internal identik dengan event atau perayaan yang pastinya asyik dan seru." << endl;
-      cout << "Salah satu kegiatan internal yaitu kompetisi yang menjadi ajang untuk meraih prestasi serta meningkatkan solidaritas dan kebersamaan antar anggota jurusan ilmu komputer." << endl;
+      cout << "Salah satu kegiatan internal yaitu kompetisi yang menjadi ajang untuk meraih prestasi serta meningkatkan solidaritas dan kebersamaan antar anggota jurusan ilmu komputer." << endl << endl;
         cout << "1. Kepengurusan dan Anggota" << endl;
         cout << "2. Program Kerja" << endl;
-        cout << "3. Kembali ke Menu Bidang Hima" << endl;
+        cout << "3. Kembali ke Menu Bidang Hima" << endl << endl;
         cout << "Masukkan pilihan Anda: ";
         cin >> pilihanInter;
 
         switch (pilihanInter) {
             case 1:
+                 cout << "\n=== Kepengurusan dan Anggota ===\n" << endl;
                  cout << "Kepala Bidang : Bimo Laksono" << endl;
                   cout << "Sekretaris Bidang : Ulfa Anida" << endl;
-                  cout << "Bendahara Bidang : Lira Septiyani" << endl;
+                  cout << "Bendahara Bidang : Lira Septiyani" << endl << endl;
                   cout << "Anggota Bidang Internal :" << endl;
                   cout << "1. Adilla Aulia Desriyanti" << endl;
                   cout << "2. Awalinda Pangestuti" << endl;
@@ -349,7 +365,7 @@ void profilInter() {
                   cout << endl;
                 break;
             case 2:
-                cout << "\n=== Program Kerja ===\n";
+                cout << "\n=== Program Kerja ===\n" << endl;
                 cout << "1. FORUM WISUDA\n";
                 cout << "2. HUT HIMAKOM\n";
                 cout << "3. KOKOM\n";
@@ -365,30 +381,26 @@ void profilInter() {
 
 }
 
-
-
 void profilMedinfo(){
-    int pilihanMedin;
-    
+    int pilihanMedinfo;
  do{
-     
-     cout << "*** Profil Medinfo ***" << endl << endl;
+     cout << endl << "*** Profil Medinfo ***" << endl << endl;
      cout << "Bidang Media Informasi adalah salah satu bidang di HIMAKOM yang mengurus tentang ke mediaan." << endl << endl;
      cout << "1. Pimpinan."<< endl;
      cout << "2. Program Kerja." << endl;
-     cout << "3. Kembali Ke Menu Bidang Hima." << endl;
-     cout << "Masukkan Pilihan Anda : " << endl;
-     cin >> pilihanMedin;
+     cout << "3. Kembali Ke Menu Bidang Hima." << endl << endl;
+     cout << "Masukkan Pilihan Anda : ";
+     cin >> pilihanMedinfo;
      
-     switch (pilihanMedin){
+     switch (pilihanMedinfo){
          case 1 :
-              cout << "*** Pimpinan ***" << endl << endl;
-              cout << "1. Ketua Bidang : Mukti Prabowo. " << endl;
-              cout << "2. Sekertaris Bidang : Enggal Bima sakti. " << endl;
-              cout << "3. Bendahara Bidang : Rica Lizania." << endl;
+              cout << endl << "*** Pimpinan ***" << endl << endl;
+              cout << "1. Ketua Bidang : Mukti Prabowo " << endl;
+              cout << "2. Sekertaris Bidang : Enggal Bima sakti " << endl;
+              cout << "3. Bendahara Bidang : Rica Lizania" << endl;
             break;
         case 2 :
-              cout << "*** Program Kerja ***" << endl << endl;
+              cout << endl << "*** Program Kerja ***" << endl << endl;
               cout << "1. Matriks" << endl;
               cout << "   a. publikasi informasi" << endl;
               cout << "   b. Youtube" << endl;
@@ -405,34 +417,29 @@ void profilMedinfo(){
             cout << "Pilihan tidak valid Silakan coba lagi." << endl;
         
        }     
-    } while (pilihanMedin ! = 3);
-     
-     
+    } while (pilihanMedinfo != 3);   
 }
 
-
-
 void profilKeilmuan(){
-    int pilihanKeilmuan;
-    
+    int pilihanKeilmuan;    
 do {
-    cout << "**** Profil Keilmuan ****" << endl << endl;
+    cout << endl << "**** Profil Keilmuan ****" << endl << endl;
     cout << "Bidang Keilmuan merupakan bidang yang bekerja sama dengan jurusan ilmu komputer untuk memfasilitası pengembangan\nminat, bakat, serta potensi akademik maupun non-akademik mahasiswa jurusan ilmu komputer" << endl << endl;
     cout << "1. Kepengurusan" << endl;
     cout << "2. Program Kerja" << endl;
-    cout << "3. Kembali Ke Menu Bidang Hima" << endl;
+    cout << "3. Kembali Ke Menu Bidang Hima" << endl << endl;
     cout << "Masukan Pilihan Anda: ";
     cin >> pilihanKeilmuan;
     
     switch (pilihanKeilmuan){
         case 1 :
-             cout << "*** Pimpinan Bidang Keilmuan. ***" << endl << endl;
+             cout << endl << "*** Pimpinan Bidang Keilmuan. ***" << endl << endl;
              cout << "1. Ketua Bidang : Rakhmat Herlambang." << endl;
              cout << "2. Sekertaris Bidang : Dela sylviayani." << endl;
              cout << "3. Bendahara bidang : Theresia Tri Oktavia." << endl << endl;
             break;
         case 2 :
-             cout << "*** Program Kerja Keilmuan ***" << endl << endl;
+             cout << endl << "*** Program Kerja Keilmuan ***" << endl << endl;
              cout << "1. Pengarsipan Materi dan Media Informasi." << endl;
              cout << "2. Hincar TIK." << endl;
              cout << "3. Project Showcase." << endl;
@@ -449,12 +456,11 @@ do {
 
 void biroHima() {
     int pilihanBiro;
-
     do {
-        cout << endl << " ***** BIRO HIMAKOM ***** " << endl;
+        cout << endl << " ***** BIRO HIMAKOM ***** " << endl << endl;
         cout << "1. Biro Kesekretariatan" << endl;
         cout << "2. Biro Kewirausahaan" << endl;
-        cout << "3. Kembali ke Menu Stuktur" << endl;
+        cout << "3. Kembali ke Menu Stuktur" << endl << endl;
         cout << "Masukkan pilihan Anda: ";
         cin >> pilihanBiro;
 
@@ -471,37 +477,33 @@ void biroHima() {
             default:
                 cout << "Pilihan tidak valid! Silakan coba lagi." << endl;
         }
-    } while (pilihanBiro ! = 3);
+    } while (pilihanBiro != 3);
 }
-
-
 
 void profilKesekretariatan(){
     int pilihanKsr;
-    
- do{
-     
-     cout << "*** Profil Kesekretariatan ***" << endl << endl;
+ do{   
+     cout << endl << "*** Profil Kesekretariatan ***" << endl << endl;
      cout << "Biro Kesekretariatan adalah biro yang bertanggung jawab terhadap kegiatan\nadministrasi, pengelolaan inventaris, pengadaan,dan pemeliharaan sarana-prasarana\ndengan optimal untuk kelancaraan progja HIMAKOM." << endl << endl;
-     cout << "1. Kepengurusan."<< endl;
+     cout << "1. Pimpinan."<< endl;
      cout << "2. Program Kerja." << endl;
-     cout << "3. Kembali Ke Menu Biro Hima." << endl;
-     cout << "Masukkan Pilihan Anda : " << endl;
+     cout << "3. Kembali Ke Menu Biro Hima." << endl << endl;
+     cout << "Masukkan Pilihan Anda : ";
      cin >> pilihanKsr;
      
      switch (pilihanKsr){
          case 1 :
-              cout << "*** Kepengurusan ***" << endl << endl;
-              cout << "1. Kepala Biro : " << endl;
-              cout << "2. Sekertaris Biro : " << endl;
-              cout << "3. Bendahara Biro : " << endl;
+              cout << endl << "*** Pimpinan Ksr ***" << endl << endl;
+              cout << "1. Kepala Biro : Deta Sari Alina " << endl;
+              cout << "2. Sekertaris Biro : Fathiyya Jasmine " << endl;
+              cout << "3. Bendahara Biro : Septia Rosalia " << endl;
             break;
         case 2 :
-              cout << "*** Program Kerja ***" << endl << endl;
+              cout << endl << "*** Program Kerja ***" << endl << endl;
               cout << "1. Pelatihan SPJ & LPJ" << endl;
               cout << "2. Mading Himakom" << endl;
               cout << "3. inventaris Himakom" << endl;
-              cout << "4. Arsip Himakom" << endl
+              cout << "4. Arsip Himakom" << endl;
               cout << "5. Administrasi Sekret Himakom" << endl;
             break;
         case 3 :
@@ -509,35 +511,30 @@ void profilKesekretariatan(){
             break;
         default :
             cout << "Pilihan tidak valid Silakan coba lagi." << endl;
-        
      }     
- } while (pilihanKsr ! = 3);
-     
-     
+ } while (pilihanKsr != 3);  
 }
-
-
 
 void profilKwu(){
     int pilihanKwu;
-    
  do {
-    cout << "*** Profil Kewirausahaan ***" << endl<<endl;
+    cout << endl << "*** Profil Kewirausahaan ***" << endl << endl;
     cout << "Biro Kewirausahaan adalah unit atau departemen di HIMAKOM yang fokus pada pengembangan\ndan dukungan bagi aktivitas kewirausahaan bagi mahasiswa ilmu komputer." << endl << endl;
     cout << "1. Kepengurusan." << endl;
     cout << "2. Program Kerja." << endl;
-    cout << "3. Kembali Ke Menu Biro Hima." << endl;
+    cout << "3. Kembali Ke Menu Biro Hima." << endl << endl;
+    cout << "Masukkan Pilihan Anda : ";
     cin >> pilihanKwu;
     
     switch (pilihanKwu){
         case 1 :
-             cout << "*** Pimpinan ***" << endl;
-             cout << "1. Ketua Biro : Ayu. " << endl;
-             cout << "2. Sekertaris Biro : Safira. " << endl ;
-             cout << "3. Bendahara Biro : Nazwa. " << endl << endl;
+             cout << endl << "*** Pimpinan Kwu ***" << endl;
+             cout << "1. Ketua Biro : Ayu Fibri Suryanti " << endl;
+             cout << "2. Sekertaris Biro : Safira Aulia " << endl ;
+             cout << "3. Bendahara Biro : Nazwa Sophia Nadine Effendi " << endl << endl;
             break;
         case 2 :
-             cout << "*** Program Kerja ***" << endl;
+             cout << endl << "*** Program Kerja ***" << endl;
              cout << "1. Hipro." << endl;
              cout << "2. Himakom Koperasi." << endl;
              cout << "3. Program Bisnis kewirausahaan." << endl;
@@ -549,7 +546,12 @@ void profilKwu(){
         default :
             cout << "Pilihan Tidak Valid Silakan Coba Lagi." << endl;  
     }
-} while (pilihanKwu ! = 3);
+} while (pilihanKwu != 3);
+}
+
+void exitMenu(){
+    cout << "Himakom Makin Jaya!" << endl;
+    exit(0); 
 }
 
 int main(){
